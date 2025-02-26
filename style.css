@@ -57,3 +57,12 @@ h1 {
     font-size: 1.1em;
     color: #555;
 }
+
+#contact-info {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
