@@ -29,7 +29,7 @@ h1 {
     font-size: 2em;
 }
 
-#medicines {
+#medicines, #cosmetics {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
