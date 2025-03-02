@@ -7,10 +7,16 @@ body {
 }
 
 #header {
-    background-color: #4CAF50;
+    height: 100vh;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #4CAF50, #81C784);
     color: white;
     padding: 20px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #header h1 {
