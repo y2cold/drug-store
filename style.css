@@ -74,7 +74,7 @@ h1 {
     font-size: 2em;
 }
 
-#medicines, #cosmetics, #medical, #vitamins {
+#medicines, #cosmetics, #medical, #vitamins, #daily, #motherandbaby {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
