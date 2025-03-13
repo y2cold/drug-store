@@ -95,8 +95,8 @@ h1 {
 #item img {
     max-width: 100%;
     border-radius: 5px;
-    width: 150px; /* Set the desired width */
-    height: auto; /* Maintain aspect ratio */
+    width: 150px;
+    height: auto;
 }
 
 #description {
@@ -144,7 +144,7 @@ h1 {
     background-color: #45a049;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     #medicines, #cosmetics {
         flex-direction: column;
