@@ -144,6 +144,8 @@ h1 {
     background-color: #45a049;
 }
 
+/* Responsive Design, used AI to help me */
+
 
 @media (max-width: 768px) {
     #medicines, #cosmetics {
