@@ -123,28 +123,6 @@ h1 {
     margin: 10px 0;
 }
 
-#contact-info input[type="email"] {
-    padding: 10px;
-    margin-top: 10px;
-    width: calc(100% - 22px);
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-#contact-info button {
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact-info button:hover {
-    background-color: #45a049;
-}
-
 /* Responsive Design, used AI to help me */
 
 
@@ -174,9 +152,5 @@ h1 {
 
     h1 {
         font-size: 1.5em;
-    }
-
-    #contact-info input[type="email"] {
-        width: calc(100% - 20px);
     }
 }
