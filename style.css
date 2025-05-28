@@ -83,13 +83,9 @@ div[id="motherandbaby"] {
     background-color: #004d40;
     color: white;
     padding: 12px 24px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    text-align: center;
 }
 
 #navbar p {
@@ -99,66 +95,11 @@ div[id="motherandbaby"] {
     letter-spacing: 1px;
 }
 
-#navbar li {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-#navbar a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: background 0.2s, color 0.2s;
-}
-
-#navbar a:hover,
-#navbar a:focus {
-    background: #80cbc4;
-    color: #004d40;
-}
-
-#menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    margin-left: auto;
-}
-
 /* Responsive Navbar */
 @media (max-width: 768px) {
-    #menu-toggle {
-        display: block;
-    }
-
-    #nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: #004d40;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        z-index: 200;
-        padding: 16px 0;
-    }
-
-    #nav-links.active {
-        display: flex;
-    }
-
     #navbar {
         position: relative;
     }
-    
 }
 
 /* Responsive content padding */
