@@ -123,23 +123,42 @@ div[id="motherandbaby"] {
     color: #004d40;
 }
 
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+}
+
 /* Responsive Navbar */
 @media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #004d40;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 200;
+        padding: 16px 0;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
     #navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 16px;
+        position: relative;
     }
-    #navbar li {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        margin-top: 10px;
-    }
-    #navbar a {
-        width: 100%;
-        padding: 10px 0;
-    }
+    
 }
 
 /* Responsive content padding */
