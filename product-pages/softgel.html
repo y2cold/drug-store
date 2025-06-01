@@ -1,206 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cerave Moisturizing Cream - Product Details | Abyssinia Pharmacy</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Cerave Moisturizing Cream - Product Details | Abyssinia Pharmacy
+    </title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f7;
-            margin: 0;
-            padding: 0;
-        }
-        
-        a {
-            text-decoration: none;
-            color: white;
-        }
-        #navbar {
-            background-color: #004d40;
-            color: white;
-            padding: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        #navbar .logo {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        #navbar .logo img {
-            height: 40px;
-            width: 40px;
-        }
-        #navbar .logo p {
-            margin: 0;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        #navbar p {
-            margin: 0;
-            font-size: 1.2rem;
-        }
-        
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f7;
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      #navbar {
+        background-color: #004d40;
+        color: white;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #navbar .logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      #navbar .logo img {
+        height: 40px;
+        width: 40px;
+      }
+      #navbar .logo p {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      #navbar p {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+
+      .product-detail-container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 32px;
+        gap: 32px;
+      }
+      .product-image {
+        flex: 1 1 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .product-image img {
+        max-width: 280px;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+      }
+      .product-info {
+        flex: 2 1 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .product-title-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 8px;
+      }
+
+      .back {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 4px 10px;
+        background: #e0f2f1;
+        color: #004d40;
+        border-radius: 4px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        border: 1px solid #b2dfdb;
+        cursor: pointer;
+        height: 2rem;
+        min-width: 2rem;
+      }
+      .back:hover,
+      .back:focus {
+        background: #004d40;
+        color: #fff;
+        border-color: #004d40;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 77, 64, 0.1);
+      }
+
+      .product-info h1 {
+        margin-top: 0;
+        color: #004d40;
+      }
+      .product-info .price {
+        font-size: 2rem;
+        color: #00796b;
+        font-weight: bold;
+        margin: 16px 0;
+      }
+      .product-info .availability {
+        color: #388e3c;
+        font-weight: 500;
+        margin-bottom: 16px;
+      }
+      .product-info .description {
+        margin-bottom: 24px;
+        color: #444;
+      }
+      .product-info .add-to-cart {
+        background: #004d40;
+        color: #fff;
+        border: none;
+        padding: 14px 32px;
+        font-size: 1.1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.2s;
+        width: fit-content;
+      }
+      .product-info .add-to-cart:hover {
+        background: #00796b;
+      }
+      @media (max-width: 700px) {
         .product-detail-container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-            display: flex;
-            flex-wrap: wrap;
-            padding: 32px;
-            gap: 32px;
+          flex-direction: column;
+          padding: 16px;
         }
-        .product-image {
-            flex: 1 1 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .product-image img {
-            max-width: 280px;
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 1px 8px rgba(0,0,0,0.06);
-        }
+        .product-image,
         .product-info {
-            flex: 2 1 350px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .product-title-row {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 8px;
-        }
-
-        .back {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            padding: 4px 10px;
-            background: #e0f2f1;
-            color: #004d40;
-            border-radius: 4px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-            border: 1px solid #b2dfdb;
-            cursor: pointer;
-            height: 2rem;
-            min-width: 2rem;
-        }
-        .back:hover, .back:focus {
-            background: #004d40;
-            color: #fff;
-            border-color: #004d40;
-            text-decoration: none;
-            box-shadow: 0 2px 8px rgba(0,77,64,0.10);
-        }
-
-        .product-info h1 {
-            margin-top: 0;
-            color: #004d40;
-        }
-        .product-info .price {
-            font-size: 2rem;
-            color: #00796b;
-            font-weight: bold;
-            margin: 16px 0;
-        }
-        .product-info .availability {
-            color: #388e3c;
-            font-weight: 500;
-            margin-bottom: 16px;
-        }
-        .product-info .description {
-            margin-bottom: 24px;
-            color: #444;
+          flex: 1 1 100%;
         }
         .product-info .add-to-cart {
-            background: #004d40;
-            color: #fff;
-            border: none;
-            padding: 14px 32px;
-            font-size: 1.1rem;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background 0.2s;
-            width: fit-content;
+          width: 100%;
         }
-        .product-info .add-to-cart:hover {
-            background: #00796b;
-        }
-        @media (max-width: 700px) {
-            .product-detail-container {
-                flex-direction: column;
-                padding: 16px;
-            }
-            .product-image, .product-info {
-                flex: 1 1 100%;
-            }
-            .product-info .add-to-cart {
-                width: 100%;
-            }
-        }
-        .product-specs {
-            color: black;
-            margin-top: 24px;
-            background: #f7f7f7;
-            border-radius: 8px;
-            padding: 16px;
-        }
-        .product-specs h2 {
-            margin-top: 0;
-            color: #004d40;
-            font-size: 1.2rem;
-        }
-        .product-specs ul {
-            margin: 0;
-            padding-left: 20px;
-        }
+      }
+      .product-specs {
+        color: black;
+        margin-top: 24px;
+        background: #f7f7f7;
+        border-radius: 8px;
+        padding: 16px;
+      }
+      .product-specs h2 {
+        margin-top: 0;
+        color: #004d40;
+        font-size: 1.2rem;
+      }
+      .product-specs ul {
+        margin: 0;
+        padding-left: 20px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="navbar">
-        <div class="logo">
-            <img src="../images/mortar_8885264.png" alt="" height="40" width="40">
-            <p>Abyssinia Pharmacy</p>
-        </div>
+      <div class="logo">
+        <img src="../images/mortar_8885264.png" alt="" height="40" width="40" />
+        <p>Abyssinia Pharmacy</p>
+      </div>
     </div>
     <div class="product-detail-container">
-        <div class="product-image">
-            <img src="../images/prigna-mum-768x768.jpg" alt="Pregna Mum Soft-gel">
+      <div class="product-image">
+        <img src="../images/prigna-mum-768x768.jpg" alt="Pregna Mum Soft-gel" />
+      </div>
+      <div class="product-info">
+        <a href="../index.html"><button class="back">< Back</button></a>
+        <h1>Pregna Mum Soft-gel</h1>
+        <div class="price">ETB 1,200</div>
+        <div class="availability">In Stock</div>
+        <div class="description">
+          Pregna Mum Soft-gel is a prenatal multivitamin and mineral supplement
+          designed to support the nutritional needs of women before, during, and
+          after pregnancy. It contains essential vitamins and minerals,
+          including folic acid, iron, calcium, and DHA, to promote healthy fetal
+          development and maternal well-being.
         </div>
-        <div class="product-info">
-    <a href="../index.html"><button class="back">< Back</button></a>
-    <h1>Pregna Mum Soft-gel</h1>
-    <div class="price">ETB 1,200</div>
-    <div class="availability">In Stock</div>
-    <div class="description">
-        Pregna Mum Soft-gel is a prenatal multivitamin and mineral supplement designed to support the nutritional needs of women before, during, and after pregnancy. It contains essential vitamins and minerals, including folic acid, iron, calcium, and DHA, to promote healthy fetal development and maternal well-being.
-    </div>
-    <button class="add-to-cart">Add to Cart</button>
-    <div class="product-specs">
-        <h2>Product Details</h2>
-        <ul>
+        <button class="add-to-cart">Add to Cart</button>
+        <div class="product-specs">
+          <h2>Product Details</h2>
+          <ul>
             <li>Form: Softgel Capsule</li>
-            <li>Key Ingredients: Folic Acid, Iron, Calcium, DHA, Vitamins & Minerals</li>
+            <li>
+              Key Ingredients: Folic Acid, Iron, Calcium, DHA, Vitamins &
+              Minerals
+            </li>
             <li>Indications: Prenatal and postnatal nutritional support</li>
             <li>Pack Size: 30 softgels (varies by supplier)</li>
-            <li>Recommended Use: 1 softgel daily with a meal or as directed by a healthcare professional</li>
-            <li>Storage: Store in a cool, dry place, out of reach of children</li>
-        </ul>
+            <li>
+              Recommended Use: 1 softgel daily with a meal or as directed by a
+              healthcare professional
+            </li>
+            <li>
+              Storage: Store in a cool, dry place, out of reach of children
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
-    </div>
-</body>
+  </body>
 </html>
