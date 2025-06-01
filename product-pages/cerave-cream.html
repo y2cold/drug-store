@@ -72,6 +72,40 @@
             flex-direction: column;
             justify-content: center;
         }
+
+        .product-title-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .back {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 4px 10px;
+            background: #e0f2f1;
+            color: #004d40;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            border: 1px solid #b2dfdb;
+            cursor: pointer;
+            height: 2rem;
+            min-width: 2rem;
+        }
+        .back:hover, .back:focus {
+            background: #004d40;
+            color: #fff;
+            border-color: #004d40;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(0,77,64,0.10);
+        }
+
         .product-info h1 {
             margin-top: 0;
             color: #004d40;
@@ -147,6 +181,7 @@
             <img src="../images/cerave_moisturizing_cream_16oz_j.jpg" alt="Cerave Moisturizing Cream">
         </div>
         <div class="product-info">
+            <a href="../index.html"><button class="back">< Back</button></a hre>
             <h1>Cerave Moisturizing Cream</h1>
             <div class="price">ETB 1,200</div>
             <div class="availability">In Stock</div>
