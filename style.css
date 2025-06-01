@@ -4,6 +4,10 @@ body {
     background: #f7f7f7;
 }
 
+a {
+    text-decoration: none;
+}
+
 #header {
     display: flex;
     justify-content: space-between;
