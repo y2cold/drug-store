@@ -36,7 +36,13 @@ a {
 }
 
 .header-left h1 {
-    font-size: 72px;
+    font-size: 60px;
+}
+
+.header-left p {
+    font-size: 1.2rem;
+    color: #004d40;
+    margin-top: 4px;
 }
 
 h1 {
