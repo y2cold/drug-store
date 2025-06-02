@@ -35,7 +35,6 @@ The layout adapts seamlessly to various screen sizes:
 - Padding and gaps adjust for mobile friendliness
 
 ## 🧪 Possible Improvements
-- Add product details and pricing
 - Include a search bar or filter options
 - Implement a shopping cart system
 - Optimize image loading (e.g., lazy loading)
